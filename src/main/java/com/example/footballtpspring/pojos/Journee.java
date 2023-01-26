@@ -24,4 +24,10 @@ public class Journee {
 
     @ManyToOne
     private Championat championat;
+
+    public Journee(Integer numero, Long idChampionat) {
+        this.numero = numero;
+        this.idChampionat = idChampionat;
+    }
+
 }

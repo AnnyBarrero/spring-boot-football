@@ -32,4 +32,17 @@ public class Equipe {
 
     @ManyToOne
     private Stade stade;
+
+    public Equipe(String nom, LocalDate dateCreation, Long idStade, String logo, String nomEntraineur, String president, String status, String siege, String telephone, String siteWeb) {
+        this.nom = nom;
+        this.dateCreation = dateCreation;
+        this.idStade = idStade;
+        this.logo = logo;
+        this.nomEntraineur = nomEntraineur;
+        this.president = president;
+        this.status = status;
+        this.siege = siege;
+        this.telephone = telephone;
+        this.siteWeb = siteWeb;
+    }
 }

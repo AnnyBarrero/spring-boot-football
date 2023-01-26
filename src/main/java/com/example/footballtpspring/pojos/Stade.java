@@ -27,4 +27,10 @@ public class Stade {
     @OneToMany(mappedBy = "stade")
     private List<Matches> matches;
 
+    public Stade(String nom, String adresse, Integer capacite, String telephone) {
+        this.nom = nom;
+        this.adresse = adresse;
+        this.capacite = capacite;
+        this.telephone = telephone;
+    }
 }

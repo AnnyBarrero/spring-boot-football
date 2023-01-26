@@ -22,5 +22,11 @@ public class Pays {
     @OneToMany(mappedBy = "pays")
     private List<Championat> championats;
 
+    public Pays(String nom, String logo, List<Championat> championats) {
+        this.nom = nom;
+        this.logo = logo;
+        this.championats = championats;
+    }
+
 
 }

@@ -36,4 +36,15 @@ public class Championat {
     @OneToMany(mappedBy = "championat")
     private List<Journee> journees;
 
+    public Championat(String nom, String logo, LocalDate dateDebut, LocalDate dateFin, Integer pointGagne, Integer pointPerdu, Integer pointNul, String typeClassement) {
+        this.nom = nom;
+        this.logo = logo;
+        this.dateDebut = dateDebut;
+        this.dateFin = dateFin;
+        this.pointGagne = pointGagne;
+        this.pointPerdu = pointPerdu;
+        this.pointNul = pointNul;
+        this.typeClassement = typeClassement;
+    }
+
 }

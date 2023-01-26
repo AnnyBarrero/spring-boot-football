@@ -21,5 +21,14 @@ public class User {
     private String pseudo;
     private String email;
 
+    public User(String nom, String prenom, String login, String mdp, String pseudo, String email) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.login = login;
+        this.mdp = mdp;
+        this.pseudo = pseudo;
+        this.email = email;
+    }
+
 
 }
