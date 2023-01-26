@@ -13,6 +13,9 @@ import java.util.List;
 @AllArgsConstructor
 public class Journee {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private Integer numero;
     private Long idChampionat;
 
