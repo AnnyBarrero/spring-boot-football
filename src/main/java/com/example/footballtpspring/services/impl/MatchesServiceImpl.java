@@ -1,5 +1,6 @@
 package com.example.footballtpspring.services.impl;
 
+import com.example.footballtpspring.dao.MatchesDao;
 import com.example.footballtpspring.pojos.Matches;
 import com.example.footballtpspring.services.MatchesService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import java.util.List;
 public class MatchesServiceImpl implements MatchesService {
 
     @Autowired
-    private MatchDao matchDao;
+    private MatchesDao matchDao;
 
     @Override
     public Matches addMatch(Matches matches) {

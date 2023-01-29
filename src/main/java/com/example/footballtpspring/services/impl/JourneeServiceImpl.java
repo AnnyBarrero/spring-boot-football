@@ -1,5 +1,7 @@
 package com.example.footballtpspring.services.impl;
 
+import com.example.footballtpspring.dao.JourneeDao;
+import com.example.footballtpspring.dao.MatchesDao;
 import com.example.footballtpspring.pojos.Journee;
 import com.example.footballtpspring.pojos.Matches;
 import com.example.footballtpspring.services.JourneeService;
@@ -15,7 +17,7 @@ public class JourneeServiceImpl implements JourneeService {
     private JourneeDao journeeDao;
 
     @Autowired
-    private MatchDao matchDao;
+    private MatchesDao matchDao;
 
     @Override
     public Journee addJournee(Journee journee) {

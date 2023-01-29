@@ -1,5 +1,7 @@
 package com.example.footballtpspring.services.impl;
 
+import com.example.footballtpspring.dao.ChampionatDao;
+import com.example.footballtpspring.dao.PaysDao;
 import com.example.footballtpspring.pojos.Championat;
 import com.example.footballtpspring.pojos.Pays;
 import com.example.footballtpspring.services.PaysService;

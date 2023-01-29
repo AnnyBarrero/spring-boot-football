@@ -26,6 +26,12 @@ public class Matches {
     @ManyToOne
     private Journee journee;
 
+    @ManyToOne
+    private Equipe equipe1;
+
+    @ManyToOne
+    private Equipe equipe2;
+
     public Matches(Integer pointsEquipe1, Integer pointsEquipe2, Long idStade, Long idEquipe1, Long idEquipe2, Long idJournee) {
         this.pointsEquipe1 = pointsEquipe1;
         this.pointsEquipe2 = pointsEquipe2;

@@ -1,0 +1,53 @@
+body {
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+a { text-decoration: none; }
+
+.space-button{
+    padding-left: 15px;
+}
+.normal-style{
+    color: white;
+}
+.active{
+    background-color: #0dcaf0;
+    color: black;
+}
+
+.title-champion{
+    text-align: center;
+
+}
+h1 {
+    text-align: center;
+    fone-size: 18;
+}
+h2 {
+    text-align: center;
+    fone-size: 16;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+
+.container {
+    padding: 16px 0;
+    text-align: left;
+}
+
+

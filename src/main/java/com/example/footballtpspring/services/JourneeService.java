@@ -10,7 +10,7 @@ public interface JourneeService {
     Journee addJournee(Journee journee);
     Journee getJournee(Long idJournee);
     List<Journee> getAllJournee();
-    List<Matches> getAllMatch(Journee journee);
+    List<Matches> getAllMatches(Journee journee);
 
 
 }

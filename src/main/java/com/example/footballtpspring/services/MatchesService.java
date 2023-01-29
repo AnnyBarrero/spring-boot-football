@@ -7,6 +7,6 @@ import java.util.List;
 public interface MatchesService {
 
     Matches addMatch(Matches match);
-    Matches getMatch(Long idMatch);
+    Matches getMatches(Long idMatch);
     List<Matches> getAllMatches();
 }

@@ -1,5 +1,7 @@
 package com.example.footballtpspring.services.impl;
 
+import com.example.footballtpspring.dao.EquipeDao;
+import com.example.footballtpspring.dao.MatchesDao;
 import com.example.footballtpspring.pojos.Equipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.footballtpspring.services.EquipeService;
@@ -14,7 +16,7 @@ public class EquipeServiceImpl implements EquipeService {
     private EquipeDao equipeDao;
 
     @Autowired
-    private MatchDao matchDao;
+    private MatchesDao matchDao;
 
     @Override
     public Equipe addEquipe(Equipe equipe) {

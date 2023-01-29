@@ -1,6 +1,9 @@
 package com.example.footballtpspring.services.impl;
 
 
+import com.example.footballtpspring.dao.EquipeDao;
+import com.example.footballtpspring.dao.MatchesDao;
+import com.example.footballtpspring.dao.StadeDao;
 import com.example.footballtpspring.pojos.Equipe;
 import com.example.footballtpspring.pojos.Matches;
 import com.example.footballtpspring.pojos.Stade;
@@ -16,11 +19,12 @@ public class StadeServiceImpl implements StadeService {
     @Autowired
     private StadeDao stadeDao;
 
+
     @Autowired
     private EquipeDao equipeDao;
 
     @Autowired
-    private MatchDao matchDao;
+    private MatchesDao matchDao;
 
     @Override
     public Stade addStade(Stade stade) {
@@ -36,15 +40,15 @@ public class StadeServiceImpl implements StadeService {
     public List<Stade> getAllStade() {
         return stadeDao.findAll();
     }
+    @Override
+    public List<Matches> getAllMatch(Stade stade) {
+        return matchDao.findByStade(stade);
+    }
 
     @Override
     public List<Equipe> getAllEquipe(Stade stade) {
         return equipeDao.findByStade(stade);
     }
 
-    @Override
-    public List<Matches> getAllMatch(Stade stade) {
-        return matchDao.findByStade(stade);
-    }
 
 }
